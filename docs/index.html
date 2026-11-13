@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>quant-ph topic scanner</title>
+<meta name="description" content="Browse by topic the quant-ph papers posted to arXiv in the last day, week or month.">
+<!-- ?v= is rewritten to the commit sha at deploy time: without it a browser can
+     pair a cached app.js with a fresh index.html and break on a renamed id. -->
+<link rel="stylesheet" href="style.css?v=dev">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <h1><span class="logo">⚛</span> quant-ph topic scanner</h1>
+  <div class="topbar-right">
+    <a class="group-link" href="https://sites.unimi.it/aqm/" target="_blank" rel="noopener">
+      Pure &amp; Applied Quantum Mechanics
+      <span>University of Milan</span>
+    </a>
+    <button id="theme-toggle" class="icon-button" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main>
+  <aside class="sidebar">
+    <section class="panel">
+      <h2>Time window</h2>
+      <div class="segmented" id="window-select" role="group" aria-label="Time window">
+        <button data-days="1" class="active">Last day</button>
+        <button data-days="7">Week</button>
+        <button data-days="30">Month</button>
+      </div>
+      <p class="hint" id="window-hint"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Search</h2>
+      <input type="search" id="query" placeholder="e.g. bosonic code, Tomamichel, &quot;spin squeezing&quot;" autocomplete="off">
+      <p class="hint">Searches titles, abstracts and <strong>author names</strong>. Every term must appear; quotes keep a phrase together.</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Topics</h2>
+        <button id="clear-topics" class="link-button">clear</button>
+      </div>
+      <div class="segmented small" id="match-mode" role="group" aria-label="How to combine topics">
+        <button data-mode="any" class="active">Any of them</button>
+        <button data-mode="all">All of them</button>
+      </div>
+      <div id="topics"></div>
+    </section>
+  </aside>
+
+  <section class="results">
+    <div class="results-head">
+      <h2 id="result-count">Loading…</h2>
+    </div>
+    <div id="active-filters" class="active-filters"></div>
+    <div id="papers"></div>
+    <div id="pager" class="pager"></div>
+  </section>
+</main>
+
+<footer>
+  <p class="credit">
+    A project of the
+    <a href="https://sites.unimi.it/aqm/" target="_blank" rel="noopener">Pure and Applied Quantum Mechanics Group</a>
+    — Department of Physics, University of Milan.
+  </p>
+  <p>
+    Data from the <a href="https://info.arxiv.org/help/api/index.html">arXiv API</a>, refreshed daily.
+    Thank you to arXiv for use of its open access interoperability.
+    <a href="https://github.com/niccololaurora/Scraper">Source on GitHub</a>.
+  </p>
+  <p id="freshness" class="freshness"></p>
+</footer>
+
+<script src="app.js?v=dev"></script>
+</body>
+</html>

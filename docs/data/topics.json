@@ -1,0 +1,140 @@
+{
+  "_comment": "Curated quant-ph taxonomy. Keywords match case-insensitively on title+abstract, with word boundaries, interchangeable hyphens/spaces and an optional trailing plural ('surface code' also hits 'surface codes'). Keep acronyms long enough to avoid false positives (QEC is fine, QC is not), and prefer the specific phrase over the generic word ('variational Monte Carlo', not 'Monte Carlo'). Edit freely: the site reads this file at load time, no need to re-run the scraper. The 'id' of a topic appears in shared URLs, so rename 'label' freely but keep 'id' stable.",
+  "groups": [
+    {
+      "name": "Information & foundations",
+      "topics": [
+        {
+          "id": "entanglement",
+          "label": "Entanglement",
+          "keywords": ["entanglement", "entangled state", "entangled pair", "entanglement entropy", "entanglement witness", "entanglement measure", "entanglement negativity", "entanglement of formation", "separability", "separable state", "negativity", "concurrence", "monogamy", "Schmidt decomposition", "Schmidt number", "Schmidt rank", "multipartite entanglement", "bipartite state", "GHZ state", "W state", "entanglement distillation", "PPT", "quantum discord", "area law"]
+        },
+        {
+          "id": "nonlocality",
+          "label": "Nonlocality",
+          "keywords": ["nonlocality", "nonlocal correlation", "Bell inequality", "Bell nonlocality", "Bell test", "Bell scenario", "Bell violation", "CHSH", "EPR steering", "quantum steering", "steerability", "local hidden variable", "loophole-free", "Tsirelson", "no-signalling", "no-signaling", "device-independent", "self-testing", "quantum correlation"]
+        },
+        {
+          "id": "resource-theory",
+          "label": "Resource theory",
+          "keywords": ["resource theory", "resource-theoretic", "resource monotone", "free operation", "free state", "LOCC", "majorization", "catalytic transformation", "catalysis", "quantum coherence", "coherence monotone", "incoherent operation", "thermal operation", "athermality", "magic monotone", "stabilizer rank", "distillable resource", "asymptotic conversion", "entanglement monotone", "resource conversion"]
+        },
+        {
+          "id": "foundations",
+          "label": "Foundations",
+          "keywords": ["quantum foundations", "contextuality", "interpretation of quantum", "measurement problem", "weak measurement", "wave function collapse", "collapse model", "objective collapse", "ontological model", "Kochen-Specker", "quantum Darwinism", "PBR theorem", "hidden variable", "Born rule", "uncertainty relation", "Leggett-Garg", "macroscopic realism", "complementarity", "Wigner's friend", "quantum-to-classical transition", "indefinite causal order", "causal structure", "quantum reference frame", "quantum logic", "generalised probabilistic theor", "generalized probabilistic theor"]
+        }
+      ]
+    },
+    {
+      "name": "Open systems, optics & metrology",
+      "topics": [
+        {
+          "id": "optics",
+          "label": "Quantum optics",
+          "keywords": ["quantum optics", "cavity QED", "Jaynes-Cummings", "superradiance", "photon blockade", "Dicke model", "polariton", "optical cavity", "light-matter interaction", "photon correlation", "photon statistics", "antibunching", "Hanbury Brown", "parametric down-conversion", "squeezed light", "squeezed state", "squeezing", "homodyne", "heterodyne", "Wigner function", "quasiprobability", "coherent state", "Fock state", "continuous variable", "non-Gaussian", "Gaussian state", "quadrature", "single-photon", "photon-number", "optical mode"]
+        },
+        {
+          "id": "circuit-qed-theory",
+          "label": "Circuit QED theory",
+          "keywords": ["circuit QED", "circuit quantization", "quantum Rabi model", "Rabi model", "ultrastrong coupling", "deep strong coupling", "dispersive regime", "dispersive shift", "waveguide QED", "giant atom", "multimode cavity", "Jaynes-Cummings lattice", "microwave photon", "artificial atom", "coupled resonator"]
+        },
+        {
+          "id": "open-systems",
+          "label": "Open quantum systems",
+          "keywords": ["open quantum system", "Lindblad", "GKSL", "master equation", "non-Markovian", "Markovian dynamics", "dissipative dynamics", "dissipation", "decoherence", "dephasing", "quantum trajectories", "quantum jump", "Redfield", "collision model", "dynamical map", "divisibility", "Kraus operator", "spectral density", "bath correlation", "pseudomode", "reservoir engineering", "environment-induced", "quantum Zeno", "decoherence-free"]
+        },
+        {
+          "id": "thermodynamics",
+          "label": "Quantum thermodynamics",
+          "keywords": ["quantum thermodynamics", "quantum heat engine", "heat engine", "work extraction", "fluctuation theorem", "Jarzynski", "Crooks", "Maxwell demon", "quantum battery", "ergotropy", "Landauer", "quantum refrigerator", "thermal machine", "heat current", "thermal transport", "entropy production", "thermodynamic uncertainty relation", "passive state", "quantum Otto", "thermalization"]
+        },
+        {
+          "id": "metrology",
+          "label": "Quantum metrology",
+          "keywords": ["quantum metrology", "quantum sensing", "Heisenberg limit", "Fisher information", "Cramer-Rao", "Cramér-Rao", "quantum estimation", "parameter estimation", "standard quantum limit", "atomic clock", "optical clock", "magnetometry", "interferometry", "spin squeezing", "squeezing-enhanced", "quantum illumination", "quantum imaging", "super-resolution", "gravimeter", "sensitivity bound", "metrological", "quantum sensor"]
+        }
+      ]
+    },
+    {
+      "name": "Error correction",
+      "topics": [
+        {
+          "id": "qec",
+          "label": "Error correction",
+          "keywords": ["quantum error correction", "QEC", "error-correcting code", "surface code", "color code", "LDPC", "stabilizer code", "decoder", "syndrome", "logical qubit", "logical error", "code distance", "toric code", "concatenated code", "parity check", "fault-tolerant", "fault tolerance", "threshold theorem", "lattice surgery", "transversal gate", "magic state", "below threshold", "error mitigation", "zero-noise extrapolation", "probabilistic error cancellation", "dynamical decoupling"]
+        },
+        {
+          "id": "bosonic-codes",
+          "label": "Bosonic codes",
+          "keywords": ["bosonic code", "bosonic qubit", "GKP", "Gottesman-Kitaev-Preskill", "cat qubit", "cat code", "cat state", "binomial code", "continuous-variable code", "oscillator encoding", "rotation-symmetric code", "number-phase code", "dissipative cat", "two-photon dissipation", "Kerr-cat", "squeezed cat", "hardware-efficient encoding", "bosonic encoding"]
+        }
+      ]
+    },
+    {
+      "name": "Algorithms & methods",
+      "topics": [
+        {
+          "id": "quantum-algorithms",
+          "label": "Quantum algorithms",
+          "keywords": ["quantum algorithm", "quantum speedup", "Grover", "amplitude amplification", "amplitude estimation", "quantum Fourier transform", "Shor's algorithm", "phase estimation", "quantum linear system", "HHL", "variational quantum", "VQE", "QAOA", "quantum approximate optimization", "ansatz", "barren plateau", "quantum machine learning", "quantum neural network", "quantum kernel", "Hamiltonian simulation", "Trotter", "qubitization", "quantum signal processing", "quantum simulation", "quantum annealing", "adiabatic quantum", "quantum advantage", "quantum supremacy", "oracle query", "quantum subroutine"]
+        },
+        {
+          "id": "quantum-chemistry",
+          "label": "Quantum chemistry",
+          "keywords": ["quantum chemistry", "electronic structure", "molecular Hamiltonian", "molecular orbital", "ground state energy", "Jordan-Wigner", "Bravyi-Kitaev", "coupled cluster", "configuration interaction", "density functional", "Hartree-Fock", "basis set", "qubit mapping", "fermionic encoding", "chemical accuracy", "potential energy surface", "FeMoco", "vibrational spectr", "excited state energ"]
+        },
+        {
+          "id": "quantum-walks",
+          "label": "Quantum walks",
+          "keywords": ["quantum walk", "continuous-time quantum walk", "discrete-time quantum walk", "quantum stochastic walk", "quantum walker", "coined walk", "Szegedy"]
+        },
+        {
+          "id": "tensor-networks",
+          "label": "Tensor networks",
+          "keywords": ["tensor network", "matrix product state", "matrix product operator", "MPS", "MPO", "DMRG", "PEPS", "MERA", "TEBD", "bond dimension", "tree tensor network", "tensor train", "neural quantum state", "variational Monte Carlo", "classical simulation of quantum"]
+        }
+      ]
+    },
+    {
+      "name": "Hardware platforms",
+      "topics": [
+        {
+          "id": "superconducting",
+          "label": "Superconducting circuits",
+          "keywords": ["superconducting qubit", "transmon", "fluxonium", "Josephson", "circuit QED", "coplanar waveguide", "parametric amplifier", "SQUID", "tunable coupler", "flux qubit", "superconducting processor"]
+        },
+        {
+          "id": "trapped-ions",
+          "label": "Trapped ions",
+          "keywords": ["trapped ion", "ion trap", "Paul trap", "Molmer-Sorensen", "Mølmer", "hyperfine qubit", "Yb+", "Ca+", "Ba+", "sympathetic cooling", "ion shuttling"]
+        },
+        {
+          "id": "neutral-atoms",
+          "label": "Neutral atoms & Rydberg",
+          "keywords": ["neutral atom", "Rydberg", "optical tweezer", "atom array", "optical lattice", "magic wavelength", "tweezer array", "cold atom", "dipolar interaction"]
+        },
+        {
+          "id": "photonics",
+          "label": "Photonics & linear optics",
+          "keywords": ["photonic qubit", "linear optical", "boson sampling", "single-photon source", "integrated photonics", "Gaussian boson sampling", "beam splitter", "photon-number resolving", "waveguide", "photonic processor", "photonic circuit"]
+        },
+        {
+          "id": "spin-qubits",
+          "label": "Spin qubits & semiconductors",
+          "keywords": ["spin qubit", "quantum dot", "silicon qubit", "donor qubit", "singlet-triplet", "exchange coupling", "germanium hole", "NV center", "nitrogen-vacancy", "colour center", "color center"]
+        },
+        {
+          "id": "topological",
+          "label": "Topological qubits & Majorana",
+          "keywords": ["topological qubit", "Majorana", "anyon", "braiding", "parafermion", "topological order", "Kitaev chain", "fusion rule"]
+        },
+        {
+          "id": "hybrid-mechanics",
+          "label": "Optomechanics & hybrid systems",
+          "keywords": ["optomechanic", "nanomechanical", "magnon", "phonon", "levitated", "microwave-to-optical", "transduction", "hybrid quantum system", "acoustic resonator"]
+        }
+      ]
+    }
+  ]
+}
